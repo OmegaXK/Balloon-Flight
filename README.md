@@ -14,3 +14,7 @@ Here are the modifications I made:
 9. The game is harder because the collision is better
 10. The game is easier to modify because the code is very readable
 11. Many more behind-the-scenes programming modifications that make the game run a lot smoother
+
+# Credits
+General idea, image files, and file handling all came from the book, "Coding Games In Python" by DK.
+Shoutouts to "Invent Your Own Computer Games With Python" and "Making Games With Python And Pygame" books by Al Sweigart for getting me into Pygame
