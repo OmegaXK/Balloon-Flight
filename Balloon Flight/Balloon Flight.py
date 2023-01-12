@@ -54,6 +54,7 @@ BASICFONT = 'freesansbold.ttf'
 def main():
 	global balloony, up, score, costume, birdframe, game_over, housex, treex, birdx, birdy, birdframe, score
 
+	#Game variables
 	game_over = False
 	score = 0
 	bup = True
@@ -226,6 +227,8 @@ def ballooncontrol():
  
 def housecontrol():
 	global housex, score, houserect
+	
+	#If the house is on the screen, then move it left
 	if houserect.right > 0:
 		housex -= 2
 	else:
@@ -240,6 +243,8 @@ def housecontrol():
 
 def treecontrol():
 	global treex, score, treerect
+
+	#If the tree is on the screen, then move it left
 	if treerect.right > 0:
 		treex -= 2
 	else:
