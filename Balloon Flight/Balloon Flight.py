@@ -22,23 +22,23 @@ birdy = random.randint(10, 200)
 birdframe = 0
 
 #Load assets
-bgimg = pygame.image.load(r"images/background.png")
+bgimg = pygame.image.load(r"images/background.png").convert_alpha()
 bgimg = pygame.transform.scale(bgimg, (WINDOWWIDTH, WINDOWHEIGHT))
 
-balloonimg = pygame.image.load(r"images/balloon.png")
+balloonimg = pygame.image.load(r"images/balloon.png").convert_alpha()
 balloonrect = balloonimg.get_rect()
 balloonrect.center = (WINDOWWIDTH / 2, WINDOWHEIGHT / 2)
 
-houseimg = pygame.image.load(r"images/house.png")
+houseimg = pygame.image.load(r"images/house.png").convert_alpha()
 houserect = houseimg.get_rect()
 houserect.center = (housex, 460)
 
-treeimg = pygame.image.load(r"images/tree.png")
+treeimg = pygame.image.load(r"images/tree.png").convert_alpha()
 treerect = treeimg.get_rect()
 treerect.center = (treex, 450)
 
-birdup = pygame.image.load(r"images/bird-up.png")
-birddown = pygame.image.load(r"images/bird-down.png")
+birdup = pygame.image.load(r"images/bird-up.png").convert_alpha()
+birddown = pygame.image.load(r"images/bird-down.png").convert_alpha()
 birdrect = birdup.get_rect()
 birdrect.center = (birdx, birdy)
 costume = ''
